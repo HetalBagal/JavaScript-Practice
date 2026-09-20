@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Builder</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .card {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            /* Ensures top alignment */
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .img img {
+            width: 150px;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .text {
+            flex: 1;
+            /* Makes text area take remaining space */
+        }
+
+        .text h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .text p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+
+        .img {
+            position: relative;
+        }
+
+        .Capsule {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            padding: 2px 6px;
+            font-size: 12px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&amp;rs=AOn4CLB6VzxANxt3dHm91HW9lLfDlxvmuA"
+                    alt="">
+                <div class="Capsule">31:32</div>
+            </div>
+            <div class="text">
+                <h4>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</h4>
+                <p>CodeWithHarry . 727K views . 2 Month ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
